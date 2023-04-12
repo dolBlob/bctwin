@@ -18,11 +18,16 @@
 // @connect      bnb.techearthnow.com
 // @connect      crypto-faucets.xyz
 // @connect      bigbtc.win
-// @grant        GM_setValue
-// @grant        GM_getValue
-// @grant        GM_xmlhttpRequest
-// @antifeature  referral-link
-// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js
+// @grant GM_listValues
+// @grant GM_setValue
+// @grant GM_getValue
+// @grant GM_addStyle
+// @grant GM_getResourceURL
+// @grant GM_xmlhttpRequest
+// @grant unsafeWindow
+// @version dob5
+// @copyright dolBlob
+// @require  https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 // ==/UserScript==
 
 
@@ -49,13 +54,13 @@ unsafeWindow.open = function(){};
      var websiteData = [
 
 
-         {url : "https://bigbtc.win/?id=45510466", address: btc, regex: "bigbtc1"},
-         {url : "https://crypto-faucets.xyz/dgb/?r=D6wzdr8QAwnkwqaae8xRBvkGe3VxPdmnqn", coin: "dgb", address: dgb},
-         {url : "http://doge.techearthnow.com/?r=DJRVVPrCrYJn8WdZ67sbiJJ3AwG9tm4PrL", address: doge},
-         {url : "http://trx.techearthnow.com/?r=TYP6EUykVRbPLL6xMiprURJ5aZMF213L3T", address: tron},
-         {url : "http://bnb.techearthnow.com/?r=0x8d09b04147d5c4fb5184cbbe96349998ff32bc4b", address: bnb},
-         {url : "https://faucet.today/?r=DGNRvwyYSMYKjxFDm8BHTcD23kWesLg5i1", address: doge},
-         {url : "http://ltc.techearthnow.com/?r=XnD7JrNoSFYp3BMSFMgf4JqMBuC4NR12qV", address: dash},
+         {url : "https://bigbtc.win/?id=44974767", address: btc, regex: "bigbtc1"},
+         {url : "https://crypto-faucets.xyz/dgb/?r=DJqCgacmbBX5W9YLbC9ktiHv6Av96BnPGo", coin: "dgb", address: dgb},
+         {url : "http://doge.techearthnow.com/?r=DGCkYfpTVz5omKMiedUvBozEDVc5iD8rN7", address: doge},
+         {url : "http://trx.techearthnow.com/?r=TBG2NFsoHfB6AoSKkepvYuRmH1B83UJZD3", address: tron},
+         {url : "http://bnb.techearthnow.com/?r=0xb8f7f8CDAC9B3b03885DAC43BA18fC80e9547fcc", address: bnb},
+         {url : "https://faucet.today/?r=DGCkYfpTVz5omKMiedUvBozEDVc5iD8rN7", address: doge},
+         {url : "http://ltc.techearthnow.com/?r=XvSnw7k96YErUMyXvB3ERioup3tyCeFrV3", address: dash},
 
 
     ];
